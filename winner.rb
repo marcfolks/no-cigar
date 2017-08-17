@@ -1,11 +1,12 @@
 def lottery(my_num, win_num1)
-  match = []
+  matchs = []
   win_num1.each do |match_num|
     if match_num == my_num
-      match << my_num
+      matchs << my_num
     end
   end
-  match
+  matchs
+
 end
 
 def off_by_one(my_num, win_num1)
@@ -23,7 +24,12 @@ def off_by_one(my_num, win_num1)
   end
   z+=1
 end
-  count == win_num1.length - 1
+if count == win_num1.length
+  count
+elsif
+ count == win_num1.length - 1
+ count
+end
 end
 p off_by_one("28760275937234",a=["287602759387234"])
 
